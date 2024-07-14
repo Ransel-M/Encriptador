@@ -1,0 +1,201 @@
+body{
+    background: #F3F5FC;
+}
+
+.logo{
+    padding: 2.5rem 0 0 2.5rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 86.5vh;
+}
+
+.encriptador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.input-principal{
+    height: 60%;
+    background: #F3F5FC;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.6rem;
+    color: #0A3871;
+}
+
+.input-principal::placeholder{
+    color: #0A3871;
+    font-size: 2rem;
+}
+
+.aviso{
+    margin-bottom: 10px;
+}
+
+.exclamacion{
+    float: left;
+    margin-right: 5px;
+}
+
+.boton, .copiar{
+    min-width: 328px;
+    min-height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.encriptar{
+    background-color: #0A3871;
+    color: #D8DFE8;
+    margin-right: 24px;
+}
+
+.desencriptar, .copiar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover{
+    transform: scale(1.05);
+}
+
+.resultado{
+    background-color: white;
+    width: 480px;
+    max-height: 914px;
+    margin-top: -60px;
+    border-radius: 32px;
+    box-shadow: 0 10px 25px #D8DFE8;
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.con-resultado{
+    display: none;
+}
+
+.texto-resultado{
+    font-size: 1.5rem;
+    max-height: 420px;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #0A3871;
+}
+
+.copiar{
+    align-self: end;
+}
+
+.sin-resultado{
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+}
+
+.sin-resultado img{
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.sin-resultado h1{
+    color: #343A40;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.sin-resultado p{
+    color: #343A40;
+}
+
+footer{
+    background: linear-gradient(#212f3d,#0a3871);
+    margin-top: 50px;
+    height: 150px;
+    text-align: center;
+}
+
+.github{
+    width: 50px;
+    margin-top: 60px;
+}
+
+footer p{
+    color: #FFFFFF;
+}
+
+@media screen and (width < 1179px) {
+    main{
+        height: auto;
+    }
+
+    .encriptador{
+        height: 48rem;
+        justify-content: space-around;
+    }
+
+    .resultado{
+        flex-basis: 684px;
+        height: auto;
+        padding: 20px 0;
+        margin: 0;  
+    }
+
+    .sin-resultado img{
+        display: none;
+    }
+
+    .sin-resultado br{
+        display: none;
+    }
+}
+
+@media screen and (width < 660px) {
+    main{
+        height: auto;
+    }
+
+    .logo{
+        padding: 2.5rem 0 0;
+    }
+    
+    .encriptador{
+        height: 80vh;
+    }
+
+    .input-principal{
+        margin-top: 7%;
+    }
+
+    .botones{
+        margin: 0.7rem 0;
+    }
+
+    .boton-conteiner{
+        max-width: 330px;
+    }
+
+    .encriptar{
+        margin: 0 0 20px;
+    }
+
+    .resultado{
+        flex-basis: 330px;
+    }
+    
+    .texto-resultado{
+        justify-self: center;
+    }
+
+    .copiar{
+        min-width: 279px;
+    }
+    }
